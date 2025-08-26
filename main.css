@@ -6,6 +6,212 @@
     text-decoration: none;
 }
 
+header {
+    background-color: #f8f8f8;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav h3 {
+    margin-right: 200px;
+    color: #4a1D1F;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+header nav a ,
+footer nav a{
+    text-decoration: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+header nav > img {
+    width: 24px;
+    height: 24px;
+    margin-right: 30px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#current-page {
+    font-weight: bold;
+    color: #4a1D1F;
+}
+
+#searchForm {
+    margin-left: 150px;
+    padding: 5px;
+    display: flex;
+    align-items: stretch;
+    vertical-align: top;
+}
+
+#searchForm input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #4a1D1F;
+    height: 100%;
+}
+
+#searchForm img {
+    background-color: #4a1D1F;
+    margin: 0px;
+    margin-right: 60px;
+    width: 35px;
+    align-items: stretch;
+}
+/* Writing CSS for main content */
+
+.main-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.main-text {
+    padding: 3rem;
+    grid-column: 1;
+    grid-row: 1 ;
+
+    font-family: 'Poppins', sans-serif;
+    color: #4a1D1F;
+}
+
+.main-text strong {
+    font-size: 28px;
+    font-weight: 1000px;
+}
+
+.main-text p{
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.button-section {
+    padding: 3rem;
+    grid-column: 1;
+    grid-row: 2 ;
+}
+
+#order-now {
+    background-color: #4a1D1F;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 20px;
+}
+#all-menus {
+    background-color: White;
+    color: #4a1D1F;
+    border: 1px solid #4a1D1F;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.button-section button:hover {
+    background-color: #6a2c2f;
+}
+
+.main-img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.menu-img {
+    background-color: rgba(255, 255, 255, 0.3);
+    position:absolute;
+    top: 500px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 2;
+    border-radius: 50px;
+}
+
+.menu-img > img {
+    width: 150px;
+    height: 100px;
+}
+
+.quotes-section {
+    color: #4a1D1F;
+    padding: 3rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+
+.quotes-section > span{
+    border-radius: 30px;
+    padding: 1px 2px;
+    font-size: 15px;
+    background-color: #FBEDCD;
+}
+
+.name-part{
+    margin: 20px 0px;
+}
+
+.quote-text{
+    padding: 1rem 7rem;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dot-container{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.dot{
+    color: #c7999c;
+}
+
+#quote-icon-1 {
+    position: absolute;
+    bottom: -140px;
+    left: 120px;
+    z-index: -1;
+}
+
+#quote-icon-2 {
+    position: absolute;
+    bottom: -280px;
+    right: 120px;
+    z-index: -1;
+}
+
+.name-part{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -290,4 +496,59 @@ h2 {
 
 .contact-btn:hover {
   background-color: #3b0a12;
+}
+
+footer {
+    display: block;
+    height: 300px;
+    background-color: #FBEDCD;
+    /* text-align: center; */
+}
+
+footer div {
+    width: 100%;
+}
+
+footer div h3 {
+    width: 30%;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    color: #4a1D1F;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+footer nav {
+    width: 70%;
+    float: right;
+    padding: 2rem 10rem 2rem 4rem;
+    text-align: left;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 60px;
+    flex-wrap: nowrap;
+}
+
+footer hr {
+    width: 100%;
+    color: #4a1D1F;
+    margin: 30px 0;
+}
+
+footer span {
+    display: inline-block;
+    width: 50%;
+    margin: 1rem 1rem 4rem 5rem;
+    text-align: left;
+}
+
+footer img {
+    margin-right: 4rem;
+}
+
+footer img:last-child {
+    margin-right: 10rem;
 }
