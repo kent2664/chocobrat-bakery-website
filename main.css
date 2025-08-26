@@ -195,14 +195,14 @@ header nav ul li a:hover {
 
 #quote-icon-1 {
     position: absolute;
-    bottom: -140px;
+    bottom: -2000px;
     left: 120px;
     z-index: -1;
 }
 
 #quote-icon-2 {
     position: absolute;
-    bottom: -280px;
+    bottom: -2100px;
     right: 120px;
     z-index: -1;
 }
